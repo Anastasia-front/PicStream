@@ -1,3 +1,21 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "allowJs": true,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "jsx": "react-jsx",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@firebase/*": ["firebase/*"],
+      "@images/*": ["images/*"],
+      "@navigation/*": ["navigation/*"],
+      "@redux/*": ["redux/*"],
+      "@screens/*": ["screens/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "include": ["src"],
+  "moduleResolution": "node",
+  "resolveJsonModule": true
 }
